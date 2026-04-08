@@ -1,6 +1,9 @@
+
+![alt text](1.png)
+
 # AlinmaPay Laravel Package
 
-Professional, SOLID-compliant integration for Alinma Pay Payment Gateway in Laravel.
+integration for Alinma Pay Payment Gateway in Laravel.
 
 ---
 
