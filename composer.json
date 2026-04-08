@@ -1,5 +1,5 @@
 {
-    "name": "alinmapay/laravel-alinmapay",
+    "name": "alinmapay/alinmapay",
     "description": "Laravel package for Alinma Pay Payment Gateway integration",
     "type": "library",
     "license": "MIT",
