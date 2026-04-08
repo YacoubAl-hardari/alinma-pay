@@ -20,7 +20,7 @@ Professional, SOLID-compliant integration for Alinma Pay Payment Gateway in Lara
 ## Installation
 
 ```bash
-composer require alinmapay/laravel-alinmapay
+composer require alinmapay/alinmapay
 php artisan vendor:publish --provider="AlinmaPay\\AlinmaPayServiceProvider"
 ```
 
