@@ -15,7 +15,7 @@ class AlinmaPayServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../Config/alinmapay.php', 'alinmapay');
+        $this->mergeConfigFrom(__DIR__ . '/Config/alinmapay.php', 'alinmapay');
 
         $this->app->singleton(SignatureGeneratorInterface::class, function ($app) {
             return new SignatureService();
@@ -44,7 +44,7 @@ class AlinmaPayServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../Config/alinmapay.php' => config_path('alinmapay.php'),
+                __DIR__ . '/Config/alinmapay.php' => config_path('alinmapay.php'),
             ], 'alinmapay-config');
         }
     }
