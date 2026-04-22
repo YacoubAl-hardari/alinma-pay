@@ -43,9 +43,12 @@ class AlinmaPayServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__ . '/Config/alinmapay.php' => config_path('alinmapay.php'),
-            ], 'alinmapay-config');
+            $configSource = __DIR__ . '/Config/alinmapay.php';
+            if (file_exists($configSource)) {
+                $this->publishes([
+                    $configSource => config_path('alinmapay.php'),
+                ], 'alinmapay-config');
+            }
         }
     }
 }

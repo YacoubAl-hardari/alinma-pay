@@ -24,7 +24,7 @@ integration for Alinma Pay Payment Gateway in Laravel.
 
 ```bash
 composer require alinmapay/alinmapay
-php artisan vendor:publish --provider="AlinmaPay\\AlinmaPayServiceProvider"
+php artisan vendor:publish --provider="AlinmaPay\AlinmaPayServiceProvider" --tag=alinmapay-config --force
 ```
 
 ---
